@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { GithubService } from 'src/app/services/github.service';
-import { HttpClientModule } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Component({
