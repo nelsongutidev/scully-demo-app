@@ -9,4 +9,17 @@ import { RouterModule } from '@angular/router';
   templateUrl: './nav.component.html',
   styles: [],
 })
-export class NavComponent {}
+export class NavComponent {
+  links = [
+    { name: 'Home', path: '/' },
+    { name: 'Contact', path: '/contact' },
+    { name: 'Projects', path: '/projects' },
+  ];
+  menuClosed = true;
+  constructor() {}
+
+  ngOnInit(): void {}
+  toggleMobileMenu() {
+    this.menuClosed = !this.menuClosed;
+  }
+}
