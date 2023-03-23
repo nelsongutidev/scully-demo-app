@@ -1,6 +1,6 @@
 <ng-container *ngIf="repo$ | async as repo">
   <div class="flex justify-center">
-    <button
+    <a
       routerLink="/projects"
       class="bg-white my-6 flex gap-2 text-gray-800 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 delay-100 duration-100"
       type="button"
@@ -21,7 +21,7 @@
         </svg>
       </span>
       <span>Back to Projects</span>
-    </button>
+    </a>
   </div>
 
   <div
