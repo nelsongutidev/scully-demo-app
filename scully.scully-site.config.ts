@@ -1,6 +1,14 @@
-import { httpGetJson, registerPlugin, ScullyConfig } from '@scullyio/scully';
+import {
+  httpGetJson,
+  registerPlugin,
+  ScullyConfig,
+  setPluginConfig,
+} from '@scullyio/scully';
 
 import '@scullyio/scully-plugin-puppeteer';
+/** this line goes into your scully.<app>.config.ts */
+import 'prismjs/components/prism-java.js';
+setPluginConfig('md', { enableSyntaxHighlighting: true });
 
 function githubProjectsPlugin() {
   return httpGetJson('https://api.github.com/users/nelsongutidev/repos', {
@@ -21,6 +29,12 @@ export const config: ScullyConfig = {
   routes: {
     '/project/:name': {
       type: 'githubProjectsPlugin',
+    },
+    '/blog/:slug': {
+      type: 'contentFolder',
+      slug: {
+        folder: './blog',
+      },
     },
   },
 };

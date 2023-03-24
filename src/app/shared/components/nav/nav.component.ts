@@ -14,6 +14,7 @@ export class NavComponent {
     { name: 'Home', path: '/' },
     { name: 'Contact', path: '/contact' },
     { name: 'Projects', path: '/projects' },
+    { name: 'Blog', path: '/blog' },
   ];
   menuClosed = true;
   constructor() {}
