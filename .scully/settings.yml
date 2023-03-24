@@ -1,0 +1,13 @@
+identifier: l9ffj67d70se1e07
+appPort: 1864
+staticPort: 1668
+reloadPort: 2667
+hostName: localhost
+projectName: scully-site
+homeFolder: /Users/nelsongutierrez/Documents/Personal Projects/copy/scully-demo-app
+distFolder: ./dist/scully-site
+outDir: >-
+  /Users/nelsongutierrez/Documents/Personal
+  Projects/copy/scully-demo-app/dist/static
+handle404: ''
+allowErrorCollect: false
